@@ -6,7 +6,7 @@ import Header from "../components/Header.astro";
 const { pageTitle } = Astro.props;
 ---
 
-<html lang="en">
+<html lang="en" class="bg-[#f1f5f9]">
   <head>
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -14,10 +14,11 @@ const { pageTitle } = Astro.props;
     <meta name="generator" content={Astro.generator} />
     <title>Astro</title>
   </head>
-  <body>
+  <body class="pl-4 pr-4">
     <Header />
-    <h1>{pageTitle}</h1>
-    <slot />
+    <main class="px-4 lg:px-8 xl:px-16 py-4 lg:py-6 xl:py-8">
+      <slot />
+    </main>
     <Footer />
     <script>
       import "../scripts/menu.js";
