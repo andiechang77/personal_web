@@ -1,8 +1,18 @@
 @import "tailwindcss";
 
+@theme {
+  --color-background: #f1f5f9;
+  --color-underline: #9cafb7;
+  --color-link: #5a568f;
+  --color-link-hover: #aca4cc;
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
+
 html {
-  background-color: #f1f5f9;
+  background-color: var(--color-background);
   font-family: "Space Mono", monospace;
+  min-height: 100vh;
 }
 
 * {
@@ -33,21 +43,5 @@ html {
 
 html.dark {
   background-color: black;
-  color: #f1f5f9;
-}
-
-.dark .nav-links a {
-  color: #f1f5f9;
-}
-
-.dark .hamburger span {
-  background-color: #f1f5f9;
-}
-
-.dark .gallery-item {
-  color: #f1f5f9;
-}
-
-.dark .footer p {
-  color: #f1f5f9;
+  color: var(--color-background);
 }

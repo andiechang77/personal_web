@@ -4,11 +4,32 @@ import { Icon } from "astro-icon/components";
 ---
 
 <footer
-  class="footer w-full 2xl:max-w-7xl max-w-5xl 2xl:h-32 border-t-4 h-[7rem] m-auto mt-8"
+  class="footer w-full 2xl:max-w-7xl max-w-5xl 2xl:h-32 border-t-4 h-[7rem] mx-auto mt-8"
 >
-  <div class="flex gap-4 h-full items-center justify-between">
-    <p class="text-sm text-neutral-700 flex-none">
-      Copyright © Andie Chang 2025. All rights reserved.
+  <section
+    class="flex flex-col lg:flex-row gap-4 items-center justify-between p-4"
+  >
+    <p class="text-sm text-neutral-700 dark:text-background flex-none">
+      Copyright © Andie Chang 2025. All rights reserved. Powered by
+      <a
+        class="text-link dark:text-link-hover underline hover:text-link-hover dark:hover:text-link"
+        href="https://astro.build"
+        target="_blank"
+        rel="noopener noreferrer">Astro</a
+      >,
+      <a
+        class="text-link dark:text-link-hover underline hover:text-link-hover dark:hover:text-link"
+        href="https://tailwindcss.com"
+        target="_blank"
+        rel="noopener noreferrer">Tailwind CSS</a
+      >
+      and
+      <a
+        class="text-link dark:text-link-hover underline hover:text-link-hover dark:hover:text-link"
+        href="https://netlify.com"
+        target="_blank"
+        rel="noopener noreferrer">Netlify</a
+      >.
     </p>
     <div class="flex gap-4">
       <a
@@ -26,5 +47,5 @@ import { Icon } from "astro-icon/components";
         <Icon name="linkedin" />
       </a>
     </div>
-  </div>
+  </section>
 </footer>

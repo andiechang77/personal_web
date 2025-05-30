@@ -9,6 +9,6 @@ document.querySelector(".hamburger").addEventListener("click", () => {
     console.log(navHeight);
     mainSection.style.marginTop = `${navHeight}px`;
   } else {
-    mainSection.style.marginTop = "0";
+    mainSection.style.marginTop = "";
   }
 });
